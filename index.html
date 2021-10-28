@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,7 +10,87 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		/>
+		<link rel="stylesheet" href="style.css">
 		<title>My Landing page</title>
 	</head>
-	<body></body>
+	<body>
+
+		<!-- Nav -->
+		<nav>
+			<div class="logo">
+				<img src="https://randomuser.me/api/portraits/men/80.jpg" alt="user">
+			</div>
+			<ul>
+				<li>
+					<a href="#">Home</a>
+					<a href="#">Portfolio</a>
+					<a href="#">Blog</a>
+					<a href="#">Contact</a>
+				</li>
+			</ul>
+		</nav>
+		<!-- Header -->
+		<header>
+			<button id="toggle" class="toggle">
+				<i class="fa fa-bars fa-2x"></i>
+			</button>
+			<h1>Landing page</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti temporibus eligendi exercitationem adipisci consequatur odio necessitatibus dolor voluptatum reprehenderit alias?</p>
+			<button class="cta-btn" id="open">Sign up</button>
+		</header>
+		<!-- Hero -->
+		<div class="container">
+			<h2>What is this landing page about</h2>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit ut et saepe tenetur nemo esse maxime voluptatum perferendis dolore, iure repellendus distinctio in perspiciatis tempora fugiat quam praesentium atque maiores aperiam odio fuga mollitia animi nobis voluptatem. Nulla, incidunt animi.</p>
+
+			<h2>Tell Me More</h2>
+
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil ratione odio, nam voluptate incidunt quae dolores reiciendis vitae totam suscipit?</p>
+
+			<h2>
+				Benefits
+			</h2>
+			<ul>
+				<li>Lifetime Access</li>
+				<li>20 Day money back</li>
+				<li>Taillord Customer Support</li>
+			</ul>
+
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur ab, ipsam consequatur et corrupti architecto error id molestias aliquam maxime repellat soluta dolores cum natus voluptate eligendi. Necessitatibus, debitis molestias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus alias veniam amet placeat temporibus maiores quasi molestiae numquam obcaecati dolorem!
+
+		</div>
+		
+		<!-- Modal -->
+		<div class="modal-container" id="modal">
+			<div class="modal"></div>
+			<button class="close-btn" id="close">
+				<i class="fa fa-times"></i>
+			</button>
+			<div class="modal-header">
+				<h3>Sign Up</h3>
+				<p>Register with us to get offers support and more</p>
+				<form action="" class="modal-form">
+					<div>
+						<label name="name">Name</label>
+						<input type="text" id="name" placeholder="Enter Name">
+					</div>
+					<div>
+						<label name="email">Email</label>
+						<input type="email" id="email" placeholder="Enter email">
+					</div>
+					<div>
+						<label name="password">Password</label>
+						<input type="password" id="password" placeholder="Enter Password">
+					</div>
+					<div>
+						<label name="password2">Confirm Password</label>
+						<input type="password2" id="password2" placeholder="Enter Confirm">
+					</div>
+					<input type="submit" value="Submit" class="submit">
+				</form>
+			</div>
+		</div>
+
+		<script src="script.js"></script>
+	</body>
 </html>
